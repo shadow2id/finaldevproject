@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ron Ryan">
+    <meta name="description" content="Culture Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture Page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: #FAF9F6;
+        }
+
+        .image{
+            width: auto;
+            height: 200px;
+        }
+
+        .color{
+            background-color: rgb(217, 0, 20);
+        }
+        .footerimg{
+            width: 174px;
+            height: 115px;
+        }
+
+        .card{
+            width: 12rem;
+        }
+        
+        .cardtext{
+            font-size: x-small;
+        }
+
+        .cardfloatright{
+            float: inline-end;
+        }
+
+        .cardfloatleft{
+            float: inline-start;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-3 p-0">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="./images/turkey_flag.png">
+                    <source media="(min-width: 767px)" srcset="./images/md_turkey_flag.png">
+                    <source media="(min-width: 577px)" srcset="./images/sm_turkey_flag.png">
+
+                    <img src="./images/sm_turkey_flag.png" class="image w-100" alt="Turkey's flag">
+                </picture>
+            </div>
+            <div class="col p-0">
+                <div class="carousel slide" id="slider">
+
+                    <div class="carousel-indicators">
+                        <button data-bs-slide-to="0" data-bs-target="#slider"></button>
+                        <button data-bs-slide-to="1" data-bs-target="#slider"></button>
+                        <button data-bs-slide-to="2" data-bs-target="#slider"></button>
+                        <button class="active" data-bs-slide-to="3" data-bs-target="#slider"></button>
+                        <button data-bs-slide-to="4" data-bs-target="#slider"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/homepage.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_homepage.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_homepage.jpg">
+            
+                                <img src="./images/sm_homepage.jpg" alt="Image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/history.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_history.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_history.jpg">
+            
+                                <img src="./images/sm_history.jpg" alt="Historical image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/nature.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_nature.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_nature.jpg">
+            
+                                <img src="./images/sm_nature.jpg" alt="Nature image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+
+                        <div class="carousel-item active">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/culture.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_culture.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_culture.jpg">
+            
+                                <img src="./images/sm_culture.jpg" alt="Cultural image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/economy.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_economy.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_economy.jpg">
+            
+                                <img src="./images/sm_economy.jpg" alt="Economic image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slider">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#slider">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="navbar navbar-expand-md bg-dark bg-gradient navbar-dark">
+                <a href="#" class="navbar-brand fw-bold ms-3">Culture of Turkey</a>
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler  me-3">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link ms-3">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./historypage.html" class="nav-link ms-3">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./naturalfeaturespage.html" class="nav-link ms-3">Natural Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./culturepage.html" class="nav-link ms-3">Culture</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./economypage.html" class="nav-link ms-3 me-3">Economy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mt-5 mb-5">
+                <p>Turkish culture is renowned for its hospitality and emphasis on family values. Extended families often gather for meals and social gatherings, reinforcing strong familial ties. Traditional Turkish hospitality, known as "misafirperverlik," welcomes guests with warmth and generosity, offering tea, sweets, and engaging conversation.</p>
+   
+                <p>The arts play a significant role in Turkish culture. Turkish carpets, ceramics, calligraphy, and handcrafted items are prized for their intricate designs and craftsmanship. The centuries-old art of Turkish tile-making, seen in mosques and palaces, showcases exquisite patterns and colors, adding to the country's cultural richness.</p>
+                
+                    <p>The culture of Turkey is a vibrant mosaic shaped by its rich history, diverse traditions, and the fusion of influences from various civilizations that have thrived within its borders. From its cuisine to its art, music, and celebrations, Turkish culture reflects a unique blend of Eastern and Western elements.</p>
+    
+                    <div class="card cardfloatleft ms-3 me-3">
+                        <img src="./images/cusine.jpg" alt="image of turkish cusine" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text cardtext">
+                                Sauced grilled wings, served with bulgur pilav, spicy appetizer (middle), and turnip water (left)  <a href="https://en.wikipedia.org/wiki/Turkish_cuisine" data-bs-toggle="tooltip" data-bs-title="Link to more info about the Turkish Cusine">Turkish Cusine</a>
+                            </p>
+                        </div>
+                    </div> 
+                               
+                
+                <p>Turkish cuisine is a delightful fusion of flavors influenced by Ottoman, Mediterranean, Middle Eastern, and Central Asian cuisines. Kebabs, baklava, Turkish delight, börek (savory pastries), mezes (appetizers), and çay (Turkish tea) are just a few highlights of this diverse culinary tradition.</p>
+
+                <p>Traditional Turkish music includes a wide range of genres, from classical Ottoman compositions to folk music and contemporary sounds. The haunting melodies of instruments like the oud, saz, and ney evoke a sense of nostalgia and emotion. Turkish folk dances, such as the lively and energetic "halay" or the elegant "belly dance" (also known as "oriental dance" or "raqs sharqi"), are an integral part of cultural celebrations.</p>
+
+                <p>The Turkish flag, with its red background and white star and crescent, symbolizes the country's identity and unity. The star and crescent motif has historical connections to the Ottoman Empire and is an enduring symbol of Turkish culture.</p>
+
+                <p>Turkey boasts a wealth of famous landmarks and historical sites that attract visitors from around the world. Istanbul, a city straddling two continents, is home to iconic landmarks like the Hagia Sophia, the Blue Mosque (Sultan Ahmed Mosque), Topkapi Palace, and the bustling Grand Bazaar.</p>
+
+                <div class="card cardfloatright ms-4 me-3">
+                    <img src="./images/Eid_al-Fitr.jpg" alt="image of Eid_al-Fitr" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text cardtext">
+                            <a href="https://en.wikipedia.org/wiki/Eid_al-Fitr" data-bs-toggle="tooltip" data-bs-title="Link to more info about Eid_al-Fitr">Eid_al-Fitr</a> is a festival which occurs at the end of Ramadan. 
+                        </p>
+                    </div>
+                </div>
+
+                <p>The ancient city of Ephesus, with its well-preserved ruins, stands as a testament to the glory of ancient civilizations. The surreal landscapes of Cappadocia, dotted with fairy chimneys and cave dwellings, create an otherworldly setting and are a popular destination for hot air balloon rides.</p>
+
+                <p>Turkey has been home to influential figures across various fields. Mustafa Kemal Atatürk, the founder of modern Turkey, is revered for his leadership in shaping the country's identity. Prominent Nobel laureate Orhan Pamuk, known for his literary works, and musicians like Sezen Aksu and İbrahim Tatlıses have made significant contributions to Turkish culture.</p>
+
+                <p>Turks celebrate a range of religious, national, and traditional holidays. Ramadan, the Islamic holy month, is observed with fasting and culminates in Eid al-Fitr, a festive celebration. Republic Day on October 29 commemorates the proclamation of the Republic of Turkey in 1923, marked by parades and ceremonies nationwide.</p>
+            </div>
+        </div>
+        <div class="row border color">
+            <img src="./images/transparent_turkey_flag.png" alt="flag of Turkey" class="footerimg mx-auto">
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
+</body>
+</html>
