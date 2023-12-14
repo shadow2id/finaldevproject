@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ron Ryan">
+    <meta name="description" content="History Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: #FAF9F6;
+        }
+
+        .image{
+            width: auto;
+            height: 200px;
+        }
+
+        .color{
+            background-color: rgb(217, 0, 20);
+        }
+        .footerimg{
+            width: 174px;
+            height: 115px;
+        }
+
+        .card{
+            width: 12rem;
+        }
+        
+        .cardtext{
+            font-size: x-small;
+        }
+
+        .cardfloatright{
+            float: inline-end;
+        }
+
+        .cardfloatleft{
+            float: inline-start;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-3 p-0">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="./images/turkey_flag.png">
+                    <source media="(min-width: 767px)" srcset="./images/md_turkey_flag.png">
+                    <source media="(min-width: 577px)" srcset="./images/sm_turkey_flag.png">
+
+                    <img src="./images/sm_turkey_flag.png" class="image w-100" alt="Turkey's flag">
+                </picture>
+            </div>
+            <div class="col p-0">
+                <div class="carousel slide" id="slider">
+
+                    <div class="carousel-indicators">
+                        <button data-bs-slide-to="0" data-bs-target="#slider"></button>
+                        <button class="active" data-bs-slide-to="1" data-bs-target="#slider"></button>
+                        <button data-bs-slide-to="2" data-bs-target="#slider"></button>
+                        <button data-bs-slide-to="3" data-bs-target="#slider"></button>
+                        <button data-bs-slide-to="4" data-bs-target="#slider"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/homepage.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_homepage.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_homepage.jpg">
+            
+                                <img src="./images/sm_homepage.jpg" alt="Image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+
+                        <div class="carousel-item active">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/history.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_history.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_history.jpg">
+            
+                                <img src="./images/sm_history.jpg" alt="Historical image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/nature.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_nature.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_nature.jpg">
+            
+                                <img src="./images/sm_nature.jpg" alt="Nature image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/culture.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_culture.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_culture.jpg">
+            
+                                <img src="./images/sm_culture.jpg" alt="Cultural image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/economy.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_economy.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_economy.jpg">
+            
+                                <img src="./images/sm_economy.jpg" alt="Economic image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slider">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#slider">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="navbar navbar-expand-md bg-dark bg-gradient navbar-dark">
+                <a href="#" class="navbar-brand fw-bold ms-3">History of Turkey</a>
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler  me-3">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link ms-3">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./historypage.html" class="nav-link ms-3">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./naturalfeaturespage.html" class="nav-link ms-3">Natural Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./culturepage.html" class="nav-link ms-3">Culture</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./economypage.html" class="nav-link ms-3 me-3">Economy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mt-5 mb-5">
+                <p>The history of modern-day Turkey is a tapestry woven with the threads of various civilizations, spanning thousands of years. This land has been a crossroads for empires, cultures, and religions, leaving an indelible mark on its identity.</p>
+
+                <div class="card cardfloatleft ms-4 me-3">
+                    <img src="./images/Göbeklitepe_Şanlıurfa.jpg" alt="image of Göbeklitepe_Şanlıurfa" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text cardtext">
+                        11,000 year old structure created by the oldest know inhabitants of Anatolia <a href="https://en.wikipedia.org/wiki/Anatolia" data-bs-toggle="tooltip" data-bs-title="Link to more info about Anatolia">Göbeklitepe_Şanlıurfa</a>
+                    </p>
+                </div>
+            
+            </div>
+                <p>Ancient Anatolia, the heartland of present-day Turkey, was inhabited by diverse civilizations. Among them were the Hittites, whose empire thrived during the Bronze Age, leaving behind impressive ruins like the capital city of Hattusa. The region later witnessed the rise of the Phrygians, Lydians, and Ionian Greeks.</p>
+   
+                <p>The conquests of Alexander the Great introduced Hellenistic culture to Anatolia. After his death, Anatolia became part of various Hellenistic kingdoms, notably the Kingdom of Pergamon, renowned for its artistic and cultural achievements.</p>
+                
+                <p>In 330 AD, the Roman Empire's annexation of Anatolia brought it under Roman rule, leading to centuries of Roman influence and the spread of Christianity. The eastern part of the Roman Empire, known as the Byzantine Empire, made Constantinople (modern-day Istanbul) its capital. Byzantine rule preserved and expanded the Greek and Roman heritage while adopting Christianity as the state religion.</p>
+
+                <p>In the 11th century, the Seljuk Turks, a nomadic people from Central Asia, began migrating into Anatolia. They gradually established their rule and, under leaders like Alp Arslan and his successor, Malik Shah, founded the Sultanate of Rum. The pivotal Battle of Manzikert in 1071 marked the Seljuks' victory over the Byzantine Empire, opening the doors for further Turkish migration and the eventual collapse of Byzantine control over Anatolia.</p>
+
+                <p>The zenith of Turkish power in Anatolia arrived with the establishment of the Ottoman Empire in the late 13th century. Osman I, the founder of the Ottoman dynasty, led the conquests that laid the foundation for an empire that would last for over six centuries. The Ottomans expanded their territories, conquering Constantinople in 1453 under Sultan Mehmed II, marking the end of the Byzantine Empire.</p>
+
+            <div class="card cardfloatright ms-3 me-5">
+                    <img src="./images/Kemal_Atatürk_portrait.jpg" alt="image of Mustafa Kemal Atatürk" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text cardtext">
+                        1st president of Turkey <a href="https://en.wikipedia.org/wiki/Mustafa_Kemal_Atat%C3%BCrk" data-bs-toggle="tooltip" data-bs-title="Link to more info about Mustafa Kemal Atatürk">Mustafa Kemal Atatürk</a>  in Adıyaman, southeastern Turkey
+                    </p>
+                </div>
+            
+            </div>
+                <p>For centuries, the Ottoman Empire thrived as a powerful and multicultural empire, encompassing diverse regions and people. It reached its peak during the reign of Suleiman the Magnificent, a period marked by great cultural and architectural achievements.</p>
+
+                <p>The decline of the Ottoman Empire began in the 19th century due to internal strife, economic challenges, and pressure from European powers. The empire gradually lost territories in the Balkans and the Middle East.</p>
+
+                <p>After World War I, with the empire's defeat, Turkey underwent a monumental transformation under the leadership of Mustafa Kemal Atatürk. The Turkish War of Independence led to the establishment of the Republic of Turkey in 1923. Atatürk initiated sweeping reforms, including the adoption of a secular government, the introduction of modern laws, and the overhaul of education and culture.</p>
+
+                <p>Since then, Turkey has experienced periods of political, social, and economic change. It has been a key player in regional geopolitics, facing challenges such as military coups, debates over secularism, Kurdish separatism, and human rights issues.</p>
+
+                <p>Today, Turkey stands at the intersection of its rich history and modern aspirations, drawing upon its diverse heritage while striving for progress and stability in the 21st century.</p>
+            </div>
+        </div>
+        <div class="row border color">
+            <img src="./images/transparent_turkey_flag.png" alt="flag of Turkey" class="footerimg mx-auto">
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
+</body>
+</html>
