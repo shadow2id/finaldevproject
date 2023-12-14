@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ron Ryan">
+    <meta name="description" content="Economy Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economy Page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: #FAF9F6;
+        }
+
+        .image{
+            width: auto;
+            height: 200px;
+        }
+
+        .color{
+            background-color: rgb(217, 0, 20);
+        }
+        .footerimg{
+            width: 174px;
+            height: 115px;
+        }
+
+        .card{
+            width: 12rem;
+        }
+        
+        .cardtext{
+            font-size: x-small;
+        }
+
+        .cardfloatright{
+            float: inline-end;
+        }
+
+        .cardfloatleft{
+            float: inline-start;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-3 p-0">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="./images/turkey_flag.png">
+                    <source media="(min-width: 767px)" srcset="./images/md_turkey_flag.png">
+                    <source media="(min-width: 577px)" srcset="./images/sm_turkey_flag.png">
+
+                    <img src="./images/sm_turkey_flag.png" class="image w-100" alt="Turkey's flag">
+                </picture>
+            </div>
+            <div class="col p-0">
+                <div class="carousel slide" id="slider">
+
+                    <div class="carousel-indicators">
+                        <button data-bs-slide-to="0" data-bs-target="#slider"></button>
+                        <button data-bs-slide-to="1" data-bs-target="#slider"></button>
+                        <button data-bs-slide-to="2" data-bs-target="#slider"></button>
+                        <button data-bs-slide-to="3" data-bs-target="#slider"></button>
+                        <button class="active" data-bs-slide-to="4" data-bs-target="#slider"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/homepage.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_homepage.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_homepage.jpg">
+            
+                                <img src="./images/sm_homepage.jpg" alt="Image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/history.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_history.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_history.jpg">
+            
+                                <img src="./images/sm_history.jpg" alt="Historical image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/nature.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_nature.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_nature.jpg">
+            
+                                <img src="./images/sm_nature.jpg" alt="Nature image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+
+                        <div class="carousel-item active">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/culture.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_culture.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_culture.jpg">
+            
+                                <img src="./images/sm_culture.jpg" alt="Cultural image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/economy.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_economy.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_economy.jpg">
+            
+                                <img src="./images/sm_economy.jpg" alt="Economic image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slider">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#slider">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="navbar navbar-expand-md bg-dark bg-gradient navbar-dark">
+                <a href="#" class="navbar-brand fw-bold ms-3">Economy of Turkey</a>
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler  me-3">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link ms-3">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./historypage.html" class="nav-link ms-3">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./naturalfeaturespage.html" class="nav-link ms-3">Natural Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./culturepage.html" class="nav-link ms-3">Culture</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./economypage.html" class="nav-link ms-3 me-3">Economy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mt-5 mb-5">
+                
+                <div class="card cardfloatright ms-3 me-3">
+                    <img src="./images/turkey_economy.png" alt="image of Ministry of Economy" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text cardtext">
+                            The emblem of the <a href="https://en.wikipedia.org/wiki/Ministry_of_Economy_%28Turkey%29" data-bs-toggle="tooltip" data-bs-title="Link to more info about the Ministry of Economy for Turkey">Ministry of Economy</a>
+                        </p>
+                    </div>
+                </div> 
+
+                <p>Turkey has a diverse and dynamic economy that blends modern industries with a rich agricultural heritage. As a transcontinental country straddling Europe and Asia, Turkey's strategic location has played a pivotal role in its economic growth and global trade.</p>
+   
+                <p>The main industries include, manufacturing, agriculture, tourism, construction, real estate, and services.</p>
+                
+                <p>Turkey's manufacturing sector plays a crucial role in its economy. The country is a leading producer of textiles, automotive products, machinery, electronics, and appliances. Istanbul and other industrial zones serve as hubs for manufacturing activities.</p>
+                                      
+                <p>Agriculture remains a significant sector, employing a considerable portion of the population. Turkey is a major producer of crops like wheat, barley, cotton, citrus fruits, and olives. Livestock farming, especially for cattle, sheep, and poultry, also contributes significantly to the agricultural output.</p>
+
+                <p>The tourism industry is a vital part of Turkey's economy, attracting millions of visitors annually. Its rich historical sites, beautiful coastlines, and diverse landscapes draw tourists from around the world, generating revenue and employment opportunities.</p>
+
+                <p>The construction industry has seen rapid growth, especially in urban areas, contributing to infrastructure development, residential projects, and commercial ventures.</p>
+
+                <p>The services sector, including finance, telecommunications, and transportation, continues to expand and modernize, reflecting Turkey's evolving economy.</p>
+
+                <p>Turkey engages in extensive trade with various countries, both within Europe and across the globe. Major trading partners include, the European Union, Middle Eastern and North African countries, and Russia.</p>
+
+                <p>The EU countries, particularly Germany, Italy, and the United Kingdom, are significant trade partners for Turkey. The EU accounts for a substantial portion of Turkey's exports and imports. Turkey has strengthened its trade ties with neighboring countries in the Middle East and North Africa, fostering economic partnerships in various sectors and they conduct significant trade with Russia, primarily in energy, agriculture, and manufacturing.</p>
+
+                <p>The currency used in Turkey is the Turkish Lira (TRY). The Central Bank of the Republic of Turkey (CBRT) oversees monetary policy, aiming to maintain price stability and support sustainable economic growth. Over the years, the Turkish economy has faced challenges related to inflation, currency fluctuations, and external economic pressures, which have at times impacted the value of the Turkish Lira.</p>
+
+                <p>Turkey's economy has shown resilience but faces challenges, including inflationary pressures, currency volatility, geopolitical tensions, and structural issues. Fiscal reforms, enhancing the investment climate, and addressing current account deficits are among the ongoing priorities to ensure sustainable growth.
+
+                    Despite challenges, Turkey benefits from its diversified economy, youthful population, and strategic geographic position, offering opportunities for continued economic development and investment in various sectors.</p>
+            </div>
+        </div>
+        <div class="row border color">
+            <img src="./images/transparent_turkey_flag.png" alt="flag of Turkey" class="footerimg mx-auto">
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
+</body>
+</html>
