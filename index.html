@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ron Ryan">
+    <meta name="description" content="Turkey HomePage">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: #FAF9F6;
+        }
+
+        .image{
+            width: auto;
+            height: 200px;
+        }
+
+        .color{
+            background-color: rgb(217, 0, 20);
+        }
+        .footerimg{
+            width: 174px;
+            height: 115px;
+        }
+
+        .card{
+            width: 12rem;
+        }
+        
+        .cardtext{
+            font-size: x-small;
+        }
+
+        .cardfloat{
+            float: inline-end;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-3 p-0">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="./images/turkey_flag.png">
+                    <source media="(min-width: 767px)" srcset="./images/md_turkey_flag.png">
+                    <source media="(min-width: 577px)" srcset="./images/sm_turkey_flag.png">
+
+                    <img src="./images/sm_turkey_flag.png" class="image w-100" alt="Turkey's flag">
+                </picture>
+            </div>
+            <div class="col p-0">
+                <div class="carousel slide" id="slider">
+
+                    <div class="carousel-indicators">
+                        <button class="active" data-bs-slide-to="0" data-bs-target="#slider"></button>
+                        <button data-bs-slide-to="1" data-bs-target="#slider"></button>
+                        <button data-bs-slide-to="2" data-bs-target="#slider"></button>
+                        <button data-bs-slide-to="3" data-bs-target="#slider"></button>
+                        <button data-bs-slide-to="4" data-bs-target="#slider"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/homepage.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_homepage.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_homepage.jpg">
+            
+                                <img src="./images/sm_homepage.jpg" alt="Image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/history.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_history.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_history.jpg">
+            
+                                <img src="./images/sm_history.jpg" alt="Historical image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/nature.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_nature.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_nature.jpg">
+            
+                                <img src="./images/sm_nature.jpg" alt="Nature image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/culture.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_culture.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_culture.jpg">
+            
+                                <img src="./images/sm_culture.jpg" alt="Cultural image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/economy.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_economy.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_economy.jpg">
+            
+                                <img src="./images/sm_economy.jpg" alt="Economic image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slider">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#slider">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="navbar navbar-expand-md bg-dark bg-gradient navbar-dark">
+                <a href="#" class="navbar-brand fw-bold ms-3">Country of Turkey</a>
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler  me-3">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link ms-3">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./historypage.html" class="nav-link ms-3">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./naturalfeaturespage.html" class="nav-link ms-3">Natural Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./culturepage.html" class="nav-link ms-3">Culture</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./economypage.html" class="nav-link ms-3 me-3">Economy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mt-5 mb-5">
+                <p>Turkey, located at the crossroads of Europe and Asia, stands as a captivating bridge between Eastern and Western civilizations. Spanning a diverse landscape encompassing bustling cities, scenic coastlines, and historic sites, Turkey boasts a rich tapestry of history, culture, and natural beauty.</p>
+
+                <p>Ankara, the capital, anchors the country's political and administrative center, while Istanbul, straddling two continents, serves as a vibrant hub of culture, commerce, and history. These cities reflect Turkey's amalgamation of ancient heritage and modern progress.</p>
+
+                    <div class="card cardfloat ms-3 me-5">
+                        <img src="./images/head.jpg" alt="image of head stone carving" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text cardtext">
+                            Large stone head statues stand at the archaeological site of <a href="https://en.wikipedia.org/wiki/Mount_Nemrut" data-bs-toggle="tooltip" data-bs-title="Link to more info on Mount Nemrut">Mount Nemrut</a>  in Adıyaman, southeastern Turkey
+                        </p>
+                    </div>
+                
+                </div>
+                <p>Steeped in history, Turkey's past is a mosaic of civilizations that have left indelible imprints. The remnants of the Byzantine, Roman, and Ottoman empires are scattered throughout the country. Iconic landmarks such as the Hagia Sophia, Topkapi Palace, and the ancient city of Ephesus stand as testaments to its rich historical legacy. The UNESCO-listed sites, including the Goreme National Park and Historical Areas of Istanbul, further underscore Turkey's significance on the world stage.</p>
+                
+                    <p>Turkish cuisine tantalizes taste buds with its flavorful diversity. From succulent kebabs and savory mezes to delectable sweets like baklava, the culinary landscape is an integral part of the Turkish experience. Turkish tea and coffee serve as social staples, fostering lively conversations in the bustling bazaars or amidst serene landscapes.</p>
+
+                    <p>The country's geography is as diverse as its culture. The striking coastline along the Aegean and Mediterranean Seas boasts stunning beaches and resorts, drawing sun-seekers and water enthusiasts. Inland, the dramatic landscapes of Cappadocia, with its surreal fairy chimneys and cave dwellings, offer a unique and mesmerizing experience.</p>
+
+                    <p>While tradition and heritage are revered, Turkey is also rapidly evolving. Its economy, a blend of agriculture, industry, and tourism, continues to grow, bolstered by its strategic geographic location as a gateway between continents.</p>
+
+                    <p>Turkey's society reflects a blend of secularism and religious traditions. Islam is the predominant religion, but the country embraces a secular political framework. This juxtaposition has been a focal point of ongoing social and political discussions within the country.</p>
+
+                    <p>However, Turkey also faces its share of challenges. Political tensions, regional conflicts, and issues of freedom of speech and human rights have been subjects of both domestic and international concern.</p>
+
+                    <p>In essence, Turkey remains a captivating destination that entices visitors with its blend of ancient wonders, vibrant culture, and warm hospitality. Its journey from antiquity to modernity is a captivating narrative, offering a glimpse into a land where East meets West, creating a tapestry of contrasts and contradictions that define its unique identity.</p>
+                
+            </div>
+        </div>
+        <div class="row border color">
+            <img src="./images/transparent_turkey_flag.png" alt="flag of Turkey" class="footerimg mx-auto">
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
+</body>
+</html>
