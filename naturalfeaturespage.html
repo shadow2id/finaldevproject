@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ron Ryan">
+    <meta name="description" content="Natural Features Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Features Page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: #FAF9F6;
+        }
+
+        .image{
+            width: auto;
+            height: 200px;
+        }
+
+        .color{
+            background-color: rgb(217, 0, 20);
+        }
+        .footerimg{
+            width: 174px;
+            height: 115px;
+        }
+
+        .card{
+            width: 12rem;
+        }
+        
+        .cardtext{
+            font-size: x-small;
+        }
+
+        .cardfloatright{
+            float: inline-end;
+        }
+
+        .cardfloatleft{
+            float: inline-start;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-3 p-0">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="./images/turkey_flag.png">
+                    <source media="(min-width: 767px)" srcset="./images/md_turkey_flag.png">
+                    <source media="(min-width: 577px)" srcset="./images/sm_turkey_flag.png">
+
+                    <img src="./images/sm_turkey_flag.png" class="image w-100" alt="Turkey's flag">
+                </picture>
+            </div>
+            <div class="col p-0">
+                <div class="carousel slide" id="slider">
+
+                    <div class="carousel-indicators">
+                        <button class="active" data-bs-slide-to="0" data-bs-target="#slider"></button>
+                        <button data-bs-slide-to="1" data-bs-target="#slider"></button>
+                        <button data-bs-slide-to="2" data-bs-target="#slider"></button>
+                        <button data-bs-slide-to="3" data-bs-target="#slider"></button>
+                        <button data-bs-slide-to="4" data-bs-target="#slider"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/homepage.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_homepage.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_homepage.jpg">
+            
+                                <img src="./images/sm_homepage.jpg" alt="Image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/history.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_history.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_history.jpg">
+            
+                                <img src="./images/sm_history.jpg" alt="Historical image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+
+                        <div class="carousel-item active">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/nature.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_nature.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_nature.jpg">
+            
+                                <img src="./images/sm_nature.jpg" alt="Nature image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/culture.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_culture.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_culture.jpg">
+            
+                                <img src="./images/sm_culture.jpg" alt="Cultural image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+
+                        <div class="carousel-item">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="./images/economy.jpg">
+                                <source media="(min-width: 767px)" srcset="./images/md_economy.jpg">
+                                <source media="(min-width: 577px)" srcset="./images/sm_economy.jpg">
+            
+                                <img src="./images/sm_economy.jpg" alt="Economic image of Turkey" class="d-block w-100 image">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slider">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#slider">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="navbar navbar-expand-md bg-dark bg-gradient navbar-dark">
+                <a href="#" class="navbar-brand fw-bold ms-3">History of Turkey</a>
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler  me-3">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link ms-3">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./historypage.html" class="nav-link ms-3">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./naturalfeaturespage.html" class="nav-link ms-3">Natural Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./culturepage.html" class="nav-link ms-3">Culture</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./economypage.html" class="nav-link ms-3 me-3">Economy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mt-5 mb-5">
+                <p>Turkey's natural features encompass a diverse tapestry of landscapes, climates, and ecosystems, contributing to its allure as a captivating destination for nature enthusiasts.</p>
+
+                <div class="card cardfloatright ms-3 me-5">
+                    <img src="./images/Karaburun_at_Turkey_Geo.jpg" alt="image of Coastline of Turkey from overhead" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text cardtext">
+                        Over-head view of the country of Turkey showing the <a href="https://en.wikipedia.org/wiki/Geography_of_Turkey" data-bs-toggle="tooltip" data-bs-title="Link to more info about the Geography_of_Turkey">geography_of_Turkey</a>
+                    </p>
+                </div>
+            
+            </div>
+                <p>The country's geography is characterized by its strategic location at the crossroads of Europe and Asia, with a varied topography that includes vast plains, rugged mountains, coastal regions, and unique geological formations.</p>
+   
+                <p>One of the defining features is the Anatolian Plateau, a vast expanse of highlands occupying much of central Turkey. This plateau, surrounded by mountain ranges, provides a contrasting landscape of fertile plains interspersed with arid areas. The Taurus and Pontic mountain ranges, with peaks reaching altitudes of over 3,000 meters, traverse the country, offering stunning vistas, diverse flora, and opportunities for outdoor activities like hiking and skiing.</p>
+                
+                <p>The Aegean and Mediterranean coastal regions boast stunning landscapes, with picturesque beaches, crystalline waters, and rugged cliffs. These areas are characterized by a Mediterranean climate, featuring hot, dry summers and mild, wet winters. The region's rich biodiversity includes olive groves, citrus orchards, pine forests, and a variety of plant species.</p>
+
+                <p>The Black Sea region in the north experiences a temperate climate with high rainfall, nurturing lush forests and verdant landscapes. The dense vegetation in this area contributes to its reputation as one of the greenest regions in Turkey.</p>
+
+                <p>Cappadocia, a geological marvel in central Turkey, is renowned for its otherworldly landscapes shaped by volcanic eruptions and erosion. Fairy chimneys, cave dwellings, and unique rock formations create a surreal and captivating environment, making it a popular tourist destination.</p>
+
+            <div class="card cardfloatleft ms-4 me-3">
+                    <img src="./images/coast.jpg" alt="image of Turkey Coast" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text cardtext">
+                        <a href="https://en.wikipedia.org/wiki/Lycian_Way" data-bs-toggle="tooltip" data-bs-title="Link to more info about Lycian Way">Lycian Way</a> is a region along the coast of the Taurus Mountains 
+                    </p>
+                </div>
+            
+            </div>
+                <p>Turkey's eastern regions, bordering Iran, Iraq, and Syria, showcase diverse terrains, from high plateaus to fertile valleys. The climate in these areas varies, with semi-arid and continental climates prevailing, supporting agriculture and nomadic herding.</p>
+
+                <p>The country's environmental diversity also includes numerous rivers, lakes, and wetlands. The Tigris and Euphrates rivers originate from eastern Turkey, providing vital water resources to the region. Lake Van, the largest lake in the country, is known for its unique ecosystem and historic sites along its shores.</p>
+
+                <p>Despite its natural beauty, Turkey faces environmental challenges, including deforestation, soil erosion, and issues related to water management and pollution. Efforts to address these challenges involve conservation projects, afforestation initiatives, and measures to protect endangered species and their habitats.</p>
+
+                <p>In essence, Turkey's diverse natural features, encompassing varied climates, stunning landscapes, and unique geological formations, offer a wealth of opportunities for exploration, outdoor activities, and appreciation of its rich environmental heritage.</p>
+            </div>
+        </div>
+        <div class="row border color">
+            <img src="./images/transparent_turkey_flag.png" alt="flag of Turkey" class="footerimg mx-auto">
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
+</body>
+</html>
